@@ -1,10 +1,12 @@
 import "./App.css";
-import Counter from "./bases/counter";
+import { CounterBy } from "./bases/ConterBy";
+import { Counter } from "./bases/Counter";
 
 function App() {
   return (
     <>
       <Counter initialState={15} />
+      <CounterBy initialState={1}/>
     </>
   );
 }

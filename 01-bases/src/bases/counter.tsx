@@ -4,7 +4,7 @@ interface CounterProps {
     initialState : number
 }
 
-const Counter = ({initialState} : CounterProps) => {
+export const Counter = ({initialState} : CounterProps) => {
   const [counter, setCounter] = useState<number>(initialState);
 
   const handleClick = () => {
@@ -19,4 +19,3 @@ const Counter = ({initialState} : CounterProps) => {
   );
 };
 
-export default Counter;
